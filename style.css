@@ -6,18 +6,63 @@ body {
   box-sizing: border-box;
   margin: 0;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+
+
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+
+
+
 }
 
 .masthead {
   background: palevioletred;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
 }
+
+.masthead__logo{
+  margin-bottom: 0px;
+  font-weight: 100;
+}
+
+.masthead__controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-between;
+  padding: 0px
+
+}
+
+li{
+  list-style-type: none;
+  margin: 0px 10px;
+
+}
+
 
 .content {
   background: coral;
+  flex-grow: 1;
+
+}
+
+.content_body {
+
 }
 
 .content__sidebar {
   background: lightsteelblue;
+  display: none;
 }
 
 .content__nav {
@@ -28,15 +73,81 @@ body {
   background: lightseagreen;
 }
 
+.footers{
+  padding: 10px 0px
+}
+
 .footer__notes,
 .footer__map {
   background: #ffffff66;
 }
 
 @media (min-width: 768px) {
+  .content{
+    display: flex;
+    flex-direction: row;
+    flex: 12
+  }
+  .content__sidebar{
+    display: none;
+
+  }
+  .content__nav{
+    flex: 4;
+  }
+
+  .content__body{
+    flex: 8;
+  }
+
+  .footer{
+    display: flex;
+    flex-direction: row;
+
+  }
+  .footers{
+    flex-grow: 1;
+  }
+
+  .masthead{
+    display: flex;
+    flex-direction: row
+  }
+
+  .masthead__logo{
+    display: flex;
+    align-content: flex-start;
+
+  }
+
+  .masthead__controls{
+    display: flex;
+    align-content: flex-end;
+  }
 
 }
 
 @media (min-width: 960px) {
+  .content{
+    display: flex;
+    flex-direction: row;
+    flex: 12
+  }
+
+  .content__body{
+    flex: 6;
+  }
+
+  .content__nav{
+    flex: 2;
+  }
+
+  .content__sidebar{
+    display: block;
+    flex: 4;
+
+  }
+
+
 
 }
