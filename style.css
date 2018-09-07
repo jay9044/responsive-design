@@ -149,6 +149,19 @@ li{
 
   }
 
+  .footers {
+  display: flex;
+  flex: 12;
+  justify-content: center;
+  }
 
-
+  .footer__notes {
+    flex: 4;
+  }
+  .footer__address {
+    flex: 4;
+  }
+  .footer__map {
+    flex: 4;
+  }
 }
