@@ -30,7 +30,7 @@ body {
 }
 
 .masthead__logo{
-  margin-bottom: 0px;
+  /* margin-bottom: 0px; */
   font-weight: 100;
 }
 
@@ -39,7 +39,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-content: space-between;
-  padding: 0px
+  /* padding: 0px */
 
 }
 
@@ -132,7 +132,19 @@ li{
   .content{
     display: flex;
     flex-direction: row;
-    flex: 12
+    flex: 12;
+  }
+
+  .masthead {
+    max-height: 30px;
+  }
+
+  .masthead__logo {
+    margin: 0px
+  }
+  
+  .masthead__controls {
+    margin-top: 7px;
   }
 
   .content__body{
