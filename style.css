@@ -111,14 +111,15 @@ li{
 
   .masthead{
     display: flex;
-    flex-direction: row
+    flex-direction: row;
+    justify-content: space-between;
+
   }
 
   .masthead__logo{
     display: flex;
     align-content: flex-start;
-
-  }
+      }
 
   .masthead__controls{
     display: flex;
